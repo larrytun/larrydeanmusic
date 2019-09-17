@@ -1,0 +1,103 @@
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.back-video {
+  width: 100%;
+}
+
+.youtube {
+  position: relative;
+  z-index: 99;
+  margin: 30px auto auto;
+  left: calc(50% - 375px);
+  opacity: .75;
+}
+
+.youtube:hover {
+  opacity: 1;
+}
+
+.soundcloud {
+  position: fixed;
+  z-index: 99;
+  width: 300px;
+  height: 300px;
+  bottom: 0;
+  right: 0;
+  opacity: .5;
+}
+
+.soundcloud:hover{
+  opacity: 1;
+}
+
+@keyframes example {
+  0%   {text-shadow: 5px 4px #ff003b;}
+  10%  {text-shadow: -3px 2px #ff003b;}
+  25%  {text-shadow: 3px -2px #00ff50;}
+  30%  {text-shadow: -3px -2px blue; opacity: 1;}
+  31%  {opacity: 0;}
+  32%  {opacity: 1;}
+  33%  {opacity: 0;}
+  34%  {opacity: 1;}
+  50%  {text-shadow: -5px -4px #ff003b;}
+  70%  {text-shadow: -9px 2px blue; opacity: 1;}
+  71%  {opacity: 0;}
+  71%  {opacity: 1;}
+  85%  {text-shadow: 1px 0px #ff003b;opacity: 1;}
+  86%  {opacity: 0;}
+  87%  {opacity: 1;}
+  88%  {opacity: 0;}
+  89%  {opacity: 1;}
+  90%  {text-shadow: -3px 5px #00ff50;}
+  100% {text-shadow: 5px 4px #ff003b;}
+}
+
+h1 {
+  position: relative;
+  font-size: 36px;
+  z-index: 99;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 80px;
+  text-shadow: 5px 4px #ff003b;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.links {
+  position: relative;
+  z-index: 99;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.links a {
+  font-size: 72px;
+  text-decoration: none;
+  color: white;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin: 0 20px;
+}
