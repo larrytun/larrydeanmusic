@@ -150,4 +150,9 @@ h1 {
     background-position: center;
     padding-top: 50px;
   }
+
+  .smallscreen .soundcloud {
+    width: 100vw;
+    opacity: 1;
+  }
 }
