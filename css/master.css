@@ -15,6 +15,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 1600px;
 }
 
 .back-video {
@@ -27,6 +28,7 @@
   margin: 30px auto auto;
   left: calc(50% - 375px);
   opacity: .75;
+  max-width: 100%;
 }
 
 .youtube:hover {
@@ -133,7 +135,7 @@ h1 {
 }
 
 
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
 
   body {
     margin: 0;
@@ -155,4 +157,55 @@ h1 {
     width: 100vw;
     opacity: 1;
   }
+} */
+
+
+@media only screen and (max-width: 1300px) {
+
+  .fullscreen-bg {
+    padding: 30px;
+    width: auto;
+  }
+
+  .fullscreen-bg__video {
+    min-height: 1000px;
+  }
+
+  .youtube {
+    height: 300px;
+    left: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .links a {
+    font-size: 36px;
+  }
+
+  .soundcloud {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .youtube {
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 21px;
+    margin-top: 30px;
+  }
+
+  .links a {
+    font-size: 31px;
+    margin: 0 10px;
+  }
+
+
 }
